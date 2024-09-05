@@ -49,9 +49,3 @@ endif
 LMODROID_VERSION ?= 6.0
 LMODROID_NAME ?= LMODroid
 LMODROID_BUILD_NAME := $(LMODROID_NAME)-$(LMODROID_VERSION)-$(BUILD_DATE)-$(LMODROID_BUILDTYPE)-$(LMODROID_BUILD)
-
-LMODROID_PROPERTIES := \
-    ro.lmodroid.build_name=$(LMODROID_BUILD_NAME) \
-    ro.lmodroid.build_date=$(BUILD_DATE) \
-    ro.lmodroid.build_type=$(LMODROID_BUILDTYPE) \
-    ro.lmodroid.version=$(LMODROID_VERSION)
