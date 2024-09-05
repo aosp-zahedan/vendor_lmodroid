@@ -210,7 +210,7 @@ PRODUCT_PACKAGES += \
     TouchGestures
 
 # TTS
-$(call inherit-product, external/svox/svox_tts.mk)
+# $(call inherit-product, external/svox/svox_tts.mk)
 
 # Config
 PRODUCT_PACKAGES += \
@@ -326,10 +326,10 @@ endif
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     dalvik.vm.systemuicompilerfilter=speed
 
-PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/lmodroid/overlay/no-rro
+# PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/lmodroid/overlay/no-rro
 PRODUCT_PACKAGE_OVERLAYS += \
-    vendor/lmodroid/overlay/common \
-    vendor/lmodroid/overlay/no-rro
+    vendor/lmodroid/overlay/common
+    # vendor/lmodroid/overlay/no-rro
 
 PRODUCT_PACKAGES += \
     DocumentsUIOverlay \
@@ -337,14 +337,14 @@ PRODUCT_PACKAGES += \
     NetworkStackMainlineOverlay
 
 # Translations
-CUSTOM_LOCALES += \
-    ast_ES \
-    gd_GB \
-    cy_GB \
-    fur_IT
+# CUSTOM_LOCALES += \
+#     ast_ES \
+#     gd_GB \
+#     cy_GB \
+#     fur_IT
 
-PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/crowdin/overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/crowdin/overlay
+# PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/crowdin/overlay
+# PRODUCT_PACKAGE_OVERLAYS += vendor/crowdin/overlay
 
 -include vendor/lmodroid-priv/keys/keys.mk
 

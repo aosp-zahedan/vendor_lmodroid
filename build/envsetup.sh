@@ -87,7 +87,7 @@ function breakfast()
                 variant="userdebug"
             fi
 
-            lunch lmodroid_$target-$aosp_target_release-$variant
+            lunch aosp_$target-$aosp_target_release-$variant
         fi
     fi
     return $?
